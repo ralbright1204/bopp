@@ -1,9 +1,17 @@
 app.controller("MapController", [ '$scope', '$http', function($scope, $http) {
 
+    var points = [];
+    var heatmap = {
+        name: 'Heat Map',
+        type: 'heat',
+        data: points,
+        visible: true
+    };
+
     $http.get("json/heat-points.json").success(function(data) {
         $scope.layers.overlays = {
             heat: {
-                name: 'Hot Bopps',
+                name: 'Heat Map',
                 type: 'heat',
                 data: data,
                 layerOptions: {
@@ -35,6 +43,15 @@ app.controller("MapController", [ '$scope', '$http', function($scope, $http) {
                 message: "Fresh jazz!",
                 focus: true,
                 draggable: false
+            }
+        },
+        layers: {
+            baselayers: {
+                xyz: {
+                    name: 'OpenStreetMap',
+                    url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                    type: 'xyz'
+                }
             }
         },
         defaults: {

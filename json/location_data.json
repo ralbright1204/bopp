@@ -1,0 +1,55 @@
+[
+	{
+		"id": 1,
+		"name": "Johnny's Tavern",
+		"location": {
+			"address": "1310 Grand Boulevard",
+			"lat": "39.098443",
+			"lon": "-94.581226"
+		},
+		"twitter": "JohnnysTaverns",
+		"tags": [
+			"powerandlight", "bar", "nightlife"
+		]
+	},
+	{
+		"id": 2,
+		"name": "Hotel Nightclub",
+		"location": {
+			"address": "1300 Grand Blvd",
+			"lat": "39.098443",
+			"lon": "-94.581226"
+		},
+		"twitter": "HotelKCMO",
+		"tags": [
+			"music", "bar", "nightlife", "powerandlight"
+		]
+	},
+	{
+		"id": 3,
+		"name": "Howl At the Moon Kansas City",
+		"location": {
+			"address": "1334 Grand Blvd",
+			"lat": "39.098082",
+			"lon": "-94.581020"
+		},
+		"twitter": "_howlatthemoon",
+		"instagram": "howlatthemoon",
+		"tags": [
+			"music", "bar", "nightlife", "powerandlight"
+		]
+	},
+	{
+		"id": 4,
+		"name": "Pizza Bar",
+		"location": {
+			"address": "1320 Grand Blvd",
+			"lat": "39.098061",
+			"lon": "-94.581367"
+		},
+		"twitter": "KCPizzaBar",
+		"tags": [
+			"bar", "powerandlight", "food"
+		]
+	}
+]
