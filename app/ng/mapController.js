@@ -18,6 +18,7 @@ app.controller("MapController", [ '$scope', '$http', function($scope, $http) {
                 focus: false,
                 draggable: false
             };
+            console.log($scope.markers);
         });
     });
 
