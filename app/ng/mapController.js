@@ -8,6 +8,19 @@ app.controller("MapController", [ '$scope', '$http', function($scope, $http) {
         visible: true
     };
 
+    $http.get("json/locations.json").success(function(data) {
+        angular.forEach(data, function(location, i){
+            console.log(location);
+            $scope.markers[data.id] = {
+                lat: data.location.lat,
+                lon: data.location.lon,
+                message: data.name,
+                focus: false,
+                draggable: false
+            };
+        });
+    });
+
     $http.get("json/heat-points.json").success(function(data) {
         $scope.layers.overlays = {
             heat: {
