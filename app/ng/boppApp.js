@@ -1,1 +1,1 @@
-var app = angular.module("boppApp", []);
+var app = angular.module("boppApp", ["leaflet-directive"]);
