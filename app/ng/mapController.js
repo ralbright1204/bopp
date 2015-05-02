@@ -13,7 +13,7 @@ app.controller("MapController", [ '$scope', '$http', function($scope, $http) {
             console.log(locationData);
             $scope.markers[locationData.id] = {
                 lat: locationData.location.lat,
-                lon: locationData.location.lon,
+                lng: locationData.location.lng,
                 message: locationData.name,
                 focus: false,
                 draggable: false

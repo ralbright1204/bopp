@@ -5,7 +5,7 @@
 		"location": {
 			"address": "1310 Grand Boulevard",
 			"lat": "39.098443",
-			"lon": "-94.581226"
+			"lng": "-94.581226"
 		},
 		"twitter": "JohnnysTaverns",
 		"tags": [
@@ -18,7 +18,7 @@
 		"location": {
 			"address": "1300 Grand Blvd",
 			"lat": "39.098443",
-			"lon": "-94.581226"
+			"lng": "-94.581226"
 		},
 		"twitter": "HotelKCMO",
 		"tags": [
@@ -31,7 +31,7 @@
 		"location": {
 			"address": "1334 Grand Blvd",
 			"lat": "39.098082",
-			"lon": "-94.581020"
+			"lng": "-94.581020"
 		},
 		"twitter": "_howlatthemoon",
 		"instagram": "howlatthemoon",
@@ -45,7 +45,7 @@
 		"location": {
 			"address": "1320 Grand Blvd",
 			"lat": "39.098061",
-			"lon": "-94.581367"
+			"lng": "-94.581367"
 		},
 		"twitter": "KCPizzaBar",
 		"tags": [
