@@ -9,11 +9,19 @@ and open the template in the editor.
         <title>Bopp</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="bower_components/leaflet/dist/leaflet.css">
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/leaflet/dist/leaflet.js"></script>
+        <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.min.js"></script>
     </head>
     <body>
-        <div id="map" ng-controller="boppCtrl">
-            show the map? {{testing}}
+        <div ng-controller="CenterController">
+            <form>
+                Latitude : <input type="number" step="any" ng-model="center.lat">
+                Longitude : <input type="number" step="any" ng-model="center.lng">
+                Zoom : <input type="number" step="any" ng-model="center.zoom">
+            </form>
+            <leaflet center="center"></leaflet>
         </div>
         <div id="list">
             listing twitter stuff
@@ -22,5 +30,6 @@ and open the template in the editor.
 
     <script src="app/ng/boppApp.js"></script>
     <script src="app/ng/boppCtrl.js"></script>
+    <script src="app/ng/centerController.js"></script>
     </body>
 </html>
