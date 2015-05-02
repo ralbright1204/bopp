@@ -9,12 +9,12 @@ app.controller("MapController", [ '$scope', '$http', function($scope, $http) {
     };
 
     $http.get("json/locations.json").success(function(data) {
-        angular.forEach(data, function(location, i){
-            console.log(location);
-            $scope.markers[data.id] = {
-                lat: data.location.lat,
-                lon: data.location.lon,
-                message: data.name,
+        angular.forEach(data, function(locationData, i){
+            console.log(locationData);
+            $scope.markers[locationData.id] = {
+                lat: locationData.location.lat,
+                lon: locationData.location.lon,
+                message: locationData.name,
                 focus: false,
                 draggable: false
             };
