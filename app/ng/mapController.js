@@ -1,4 +1,20 @@
-app.controller("MapController", [ '$scope', function($scope) {
+app.controller("MapController", [ '$scope', '$http', function($scope, $http) {
+
+    $http.get("json/heat-points.json").success(function(data) {
+        $scope.layers.overlays = {
+            heat: {
+                name: 'Hot Bopps',
+                type: 'heat',
+                data: data,
+                layerOptions: {
+                    radius: 20,
+                    blur: 10
+                },
+                visible: true
+            }
+        };
+    });
+
     angular.extend($scope, {
         center: {
             lat: 39.0978,
