@@ -27,7 +27,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: "/app",
     abstract: true,
     templateUrl: "templates/menu.html",
-    controller: 'AppCtrl'
   })
 
   .state('app.music', {
