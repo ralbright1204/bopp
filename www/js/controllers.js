@@ -1,5 +1,33 @@
 angular.module('starter.controllers', [])
 
+.controller('mapCtrl', function($scope, $ionicModal, $ionicSlideBoxDelegate) {
+
+  $scope.navSlide = function(index) {
+    $ionicSlideBoxDelegate.slide(index, 500);
+  };
+
+  $ionicModal.fromTemplateUrl('templates/map.html', {
+    scope: $scope,
+    animation: 'fade-in'
+  }).then(function(modal) {
+      $scope.modal = modal;
+  });
+
+  $scope.openModal = function() {
+    $scope.modal.show();
+  };
+
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+  };
+
+  //Cleanup the modal when we're done with it!
+  $scope.$on('$destroy', function() {
+
+  });
+})
+
+/**
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
   // Form data for the login modal
   $scope.loginData = {};
@@ -32,6 +60,7 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
+**/
 
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
