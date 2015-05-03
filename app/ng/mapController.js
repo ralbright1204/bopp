@@ -10,7 +10,6 @@ app.controller("MapController", [ '$scope', '$http', function($scope, $http) {
 
     $http.get("json/locations.json").success(function(data) {
         angular.forEach(data, function(locationData, i){
-            console.log(locationData);
             $scope.markers[locationData.id] = {
                 lat: locationData.location.lat,
                 lng: locationData.location.lng,
@@ -18,7 +17,6 @@ app.controller("MapController", [ '$scope', '$http', function($scope, $http) {
                 focus: false,
                 draggable: false
             };
-            console.log($scope.markers);
         });
     });
 
