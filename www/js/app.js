@@ -34,7 +34,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: "/music",
     views: {
       'menuContent': {
-        templateUrl: "templates/music.html"
+        templateUrl: "templates/menu/music.html"
       }
     }
   })
@@ -43,7 +43,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: "/food",
     views: {
       'menuContent': {
-        templateUrl: "templates/food.html"
+        templateUrl: "templates/menu/food.html"
       }
     }
   })
@@ -51,7 +51,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: "/bar",
     views: {
       'menuContent': {
-        templateUrl: "templates/bar.html"
+        templateUrl: "templates/menu/bar.html"
       }
     }
   })
@@ -59,7 +59,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: "/search",
     views: {
       'menuContent': {
-        templateUrl: "templates/search.html"
+        templateUrl: "templates/menu/search.html"
       }
     }
   })
@@ -67,7 +67,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/home",
       views: {
         'menuContent': {
-          templateUrl: "templates/home.html",
+          templateUrl: "templates/menu/home.html"
+        }
+      }
+    })
+    //Details state
+    .state('app.home.details', {
+      url: "home/details",
+      views: {
+        'home': {
+          templateUrl: "templates/details.html"
         }
       }
     });
