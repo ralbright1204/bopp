@@ -64,7 +64,7 @@ angular.module('starter.controllers', [])
         visible: true
     };
 
-    $http.get("js/locations.json").success(function(data) {
+    $http.get("json/locations.json").success(function(data) {
         angular.forEach(data, function(locationData, i){
             $scope.markers[locationData.id] = {
                 lat: locationData.location.lat,
@@ -76,7 +76,7 @@ angular.module('starter.controllers', [])
         });
     });
 
-    $http.get("js/heat-points.json").success(function(data) {
+    $http.get("json/heat-points.json").success(function(data) {
         $scope.layers.overlays = {
             heat: {
                 name: 'Heat Map',
