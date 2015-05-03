@@ -4,8 +4,8 @@
 		"name": "Johnny's Tavern",
 		"location": {
 			"address": "1310 Grand Boulevard",
-			"lat": "39.098443",
-			"lng": "-94.581226"
+			"lat": 39.098443,
+			"lng": -94.581226
 		},
 		"twitter": "JohnnysTaverns",
 		"tags": [
@@ -17,8 +17,8 @@
 		"name": "Hotel Nightclub",
 		"location": {
 			"address": "1300 Grand Blvd",
-			"lat": "39.098443",
-			"lng": "-94.581226"
+			"lat": 39.098443,
+			"lng": -94.581226
 		},
 		"twitter": "HotelKCMO",
 		"tags": [
@@ -29,9 +29,9 @@
 		"id": 3,
 		"name": "Howl At the Moon Kansas City",
 		"location": {
-			"address": "1334 Grand Blvd",
-			"lat": "39.098082",
-			"lng": "-94.581020"
+			"address": "1334 Grand Blvd ",
+			"lat": 39.098082,
+			"lng": -94.581020
 		},
 		"twitter": "_howlatthemoon",
 		"instagram": "howlatthemoon",
@@ -44,12 +44,274 @@
 		"name": "Pizza Bar",
 		"location": {
 			"address": "1320 Grand Blvd",
-			"lat": "39.098061",
-			"lng": "-94.581367"
+			"lat": 39.098061,
+			"lng": -94.581367
 		},
-		"twitter": "KCPizzaBar",
+		"twitter": "KCPizzaBar",,
 		"tags": [
 			"bar", "powerandlight", "food"
 		]
+	},
+	{
+		"id": 5,
+		"name": "Shark Bar",
+		"location": {
+			"address": "1340 Grand Blvd",
+			"lat": 39.097922,
+			"lng": -94.581392
+		},
+		"twitter": "SharkBarKC",
+		"tags": [
+			"music", "bar", "nightlife", "powerandlight"
+		]
+	},
+	{
+		"id": 6,
+		"name": "McFaddens KC",
+		"location": {
+			"address": "1330 Grand Blvd ",
+			"lat": 39.097824,
+			"lng": -94.581271
+		},
+		"twitter": "McFaddensKC",
+		"tags": [
+			"music", "bar", "nightlife", "powerandlight"
+		]
+	},
+	{
+		"id": 7,
+		"name": "Mosaic Lounge",
+		"location": {
+			"address": "1331 Walnut Street ",
+			"lat": 39.098149,
+			"lng": -94.582153
+		},
+		"twitter": "MosaicKC",,
+		"tags": [
+			"music", "bar", "nightlife", "powerandlight"
+		]
+	},
+	{
+		"id": 8,
+		"name": "Fuego",
+		"location": {
+			"address": "1333 Walnut Street ",
+			"lat": 39.098121,
+			"lng": -94.582155
+		},
+		"tags": [
+			"music", "bar", "nightlife", "powerandlight"
+		]
+	},
+	{
+		"id": 9,
+		"name": "Tengo Sed Cantina",
+		"location": {
+			"address": "1323 Walnut Street ",
+			"lat": 39.098258,
+			"lng": -94.582147
+		},
+		"twitter": "TengoSedKC",,
+		"tags": [
+			"bar", "food", "powerandlight"
+		]
+	},
+	{
+		"id": 10,
+		"name": "Angel's Rock Bar",
+		"location": {
+			"address": "1323 Walnut Street ",
+			"lat": 39.098258,
+			"lng": -94.582147
+		},
+		"twitter": "KCAngelsRockBar",
+		"tags": [
+			"music", "bar", "nightlife", "powerandlight"
+		]
+	},
+		{
+		"id": 11,
+		"name": "Flying Saucer Draught Emporium",
+		"location": {
+			"address": "101 East 13th Street ",
+			"lat": 39.098316,
+			"lng": -94.581978
+		},
+		"twitter": "FlyingSaucerKC",
+		"tags": [
+			"music", "bar", "nightlife", "powerandlight"
+		]
+	},
+	{
+		"id": 12,
+		"name": "PBR Big Sky",
+		"location": {
+			"address": "111 East 13th Street ",
+			"lat": 39.098439,
+			"lng": -94.581971
+		},
+		"twitter": "PBRBigSkyKC",
+		"tags": [
+			"music", "bar", "nightlife", "powerandlight", "food"
+		]
+	},
+	{
+		"id": 13,
+		"name": "Bristol Seafood Grill ",
+		"location": {
+			"address": "51 East 14th Street ",
+			"lat": 39.096906,
+			"lng": -94.582857
+		},
+		"twitter": "BristolKC",,
+		"tags": [
+			"bar", "food", "powerandlight"
+		]
+	},
+	{
+		"id": 14,
+		"name": "BRGR Kitchen + Bar P&L",
+		"location": {
+			"address": "11 East 14th Street",
+			"lat": 39.097763,
+			"lng": -94.581144
+		},
+		"instagram": "brgrkitchen",
+		"tags": [
+			"powerandlight", "bar", "nightlife", "food"
+		]
+	},
+	{
+		"id": 15,
+		"name": "Alamo Drafthouse Mainstreet",
+		"location": {
+			"address": "1400 Main Street",
+			"lat": 39.098443,
+			"lng": -94.583705
+		},
+		"twitter": "AlamoKC",
+		"tags": [
+			"music", "bar", "nightlife", "powerandlight"
+		]
+	},
+	{
+		"id": 16,
+		"name": "KOBE Japanese Steak and Seafood",
+		"location": {
+			"address": "1303 Baltimore Avenue ",
+			"lat": 39.098462,
+			"lng": -94.584289
+		},
+		
+		"tags": [
+			"food", "powerandlight"
+		]
+	},
+	{
+		"id": 17,
+		"name": "Anton's Taproom",
+		"location": {
+			"address": "1610 Main Street",
+			"lat": 39.094081,
+			"lng": -94.583592
+		},
+		
+		"tags": [
+			"bar", "powerandlight", "food"
+		]
+	},
+	{
+		"id": 18,
+		"name": "Nara NeoJapanese",
+		"location": {
+			"address": "1340 Grand Blvd",
+			"lat": 39.093787,
+			"lng": -94.583356
+		},
+		"twitter": "narakansascity",
+		"tags": [
+			"food", "bar", "powerandlight"
+		]
+	},
+	{
+		"id": 18,
+		"name": "The Bulldog",
+		"location": {
+			"address": "1715 Main Street ",
+			"lat": 39.092756,
+			"lng": -94.583474
+		},
+		
+		"tags": [
+			"food", "bar", "powerandlight"
+		]
+	},
+	{
+		"id": 19,
+		"name": "Cellar Rat Wine Merchants",
+		"location": {
+			"address": "1701 Baltimore Avenue ",
+			"lat": 39.093274,
+			"lng": -94.584558
+		},
+		
+		"tags": [
+			"food", "bar", "powerandlight"
+		]
+	},
+	{
+		"id": 19,
+		"name": "Extra Virgin",
+		"location": {
+			"address": "1900 Main Street ",
+			"lat": 39.090170,
+			"lng": -94.583707
+		},
+		"tags": [
+			"food", "bar", "nightlife", "powerandlight"
+		]
+	},
+	{
+		"id": 20,
+		"name": "Lidia's Restaurant",
+		"location": {
+			"address": "101 West 22nd Street ",
+			"lat": 39.087822,
+			"lng":-94.584780
+		},
+		"twitter": "lidiaskc",,
+		"tags": [
+			"bar", "food", "powerandlight"
+		]
+	},
+	{
+		"id": 21,
+		"name": "Grunauer",
+		"location": {
+			"address": "101 West 22nd Street ",
+			"lat": 39.087464,
+			"lng": -94.585038
+		},
+		"twitter": "GrunauerKC",
+		"tags": [
+			"food", "bar", "nightlife", "powerandlight"
+		]
 	}
+{
+		"id": 22,
+		"name": "Drunken Fish",
+		"location": {
+			"address": "14 East 14th Street ",
+			"lat": 39.097763,
+			"lng": -94.581144
+		},
+		"twitter": "drunkenfish",
+		"instagram": "drunkenfish",
+		"tags": [
+			"food", "bar", "nightlife", "powerandlight"
+		]
+	}
+
 ]
+
+
