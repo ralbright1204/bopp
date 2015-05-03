@@ -1,4 +1,4 @@
-var app = angular.module("boppApp", ["leaflet-directive", "ui.router"])
+var app = angular.module("boppApp", ["leaflet-directive", "ui.router", "ngMaterial", "ngRetina"])
 
 .config(function($stateProvider, $urlRouterProvider) {
   //
