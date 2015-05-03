@@ -1,6 +1,10 @@
+var approxGaussian = function() {
+    return ((Math.random() + Math.random() + Math.random() + Math.random() + Math.random() + Math.random()) - 3) / 3;
+}
+
 var generatePoint = function(lat, lng){
-	var randomLat = (Math.random() - 0.5) * 0.01;
-	var randomLng = (Math.random() - 0.5) * 0.01;
+	var randomLat = approxGaussian() * 0.003;
+	var randomLng = approxGaussian() * 0.003;
 	return [lat+randomLat, lng+randomLng];
 }
 
