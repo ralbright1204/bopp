@@ -1,4 +1,4 @@
-app.controller('uiController', ['$scope', '$mdSidenav', function($scope, $mdSidenav) {
+app.controller('BoppController', ['$scope', '$mdSidenav', function($scope, $mdSidenav) {
   
   $scope.selected = null;
   $scope.toggleSidenav = toggleSidenav;

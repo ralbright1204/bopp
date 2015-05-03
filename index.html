@@ -26,7 +26,7 @@ and open the template in the editor.
         <link rel="shortcut icon" href="favicon.png" />
         <link rel="apple-touch-icon" href="favicon.png" />
     </head>
-    <body>
+    <body ng-controller="BoppController">
         <md-toolbar layout="row" id="header-bar">
             <button ng-click="toggleSidenav('left')" hide-gt-sm class="menuBtn">
                 <span class="visuallyhidden">Menu</span>
@@ -55,8 +55,7 @@ and open the template in the editor.
             </div>
         </div>        
         <script src="app/ng/boppApp.js"></script>
-        <script src="app/ng/boppCtrl.js"></script>
-        <script src="app/ng/uiController.js"></script>
+        <script src="app/ng/boppController.js"></script>
         <script src="app/ng/mapController.js"></script>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </body>
