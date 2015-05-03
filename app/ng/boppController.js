@@ -2,6 +2,7 @@ app.controller('BoppController', ['$scope', '$mdSidenav', function($scope, $mdSi
   
   $scope.selected = null;
   $scope.toggleSidenav = toggleSidenav;
+  $scope.routeTo = routeTo;
 
   function routeTo(name){
     $state.go(name);
