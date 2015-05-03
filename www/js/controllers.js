@@ -44,6 +44,71 @@ angular.module('starter.controllers', [])
   ];
 })
 
+.controller('detailsCtrl', function($scope) {
+    angular.element(document).ready(function() {
+        twttr.widgets.load();
+    });
+})
+
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+})
+
+.controller("MapController", [ '$scope', '$http', function($scope, $http) {
+
+    var points = [];
+    var heatmap = {
+        name: 'Heat Map',
+        type: 'heat',
+        data: points,
+        visible: true
+    };
+
+    $http.get("js/locations.json").success(function(data) {
+        angular.forEach(data, function(locationData, i){
+            $scope.markers[locationData.id] = {
+                lat: locationData.location.lat,
+                lng: locationData.location.lng,
+                message: locationData.name,
+                focus: false,
+                draggable: false
+            };
+        });
+    });
+
+    $http.get("js/heat-points.json").success(function(data) {
+        $scope.layers.overlays = {
+            heat: {
+                name: 'Heat Map',
+                type: 'heat',
+                data: data,
+                layerOptions: {
+                    radius: 20,
+                    blur: 10
+                },
+                visible: true
+            }
+        };
+    });
+
+    angular.extend($scope, {
+        center: {
+            lat: 39.0978,
+            lng: -94.5822,
+            zoom: 13
+        },
+        markers: {},
+        layers: {
+            baselayers: {
+                xyz: {
+                    name: 'OpenStreetMap',
+                    url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                    type: 'xyz'
+                }
+            }
+        },
+        defaults: {
+            scrollWheelZoom: false
+        }
+    });
+}]);
