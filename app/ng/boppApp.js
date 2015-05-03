@@ -3,7 +3,7 @@ var app = angular.module("boppApp", ["leaflet-directive", "ui.router", "ngMateri
 .config(function($stateProvider, $urlRouterProvider) {
   //
   // For any unmatched url, redirect to /state1
-  $urlRouterProvider.otherwise("/");
+  $urlRouterProvider.otherwise("/map");
   //
   // Now set up the states
   $stateProvider
