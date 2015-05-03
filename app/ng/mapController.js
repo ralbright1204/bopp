@@ -41,6 +41,7 @@ app.controller("MapController", [ '$scope', '$http', function($scope, $http) {
             lng: -94.5822,
             zoom: 13
         },
+        markers: {},
         layers: {
             baselayers: {
                 xyz: {
