@@ -1,7 +1,7 @@
-<ion-modal-view class="image-modal black">
+<ion-modal-view   ng-controller="MapController" class="image-modal black">
 
     <div class="buttons">
       <button class="button button-clear icon-left ion-ios-close-empty" ng-click="closeModal()"></button>
     </div>
-MAP GOES HERE
+<leaflet center="center" markers="markers" layers="layers" width="100%" height="480px"></leaflet>
 </ion-modal-view>
